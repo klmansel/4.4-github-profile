@@ -27,9 +27,36 @@
     </div>
   </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="profile-left">  </div>
+      </div>
+
+      <div class="col-md-8 col-offset-1">
+        <div class="repos-section"></div>
+    </div>
+</div>
 
 
+
+<script id="profileTemplate" type="text/x-handlebars-template">
+<a href="{{html_url}}"><img class="profile-pic" src ="{{avatar_url}}"/></a>
+<p class="name">{{name}}</p>
+<p class="loginid">{{login}}</p>
+<p class="email">{{email}}</p>
+<p class="blog">{{blog}}</p>
+<p class="location">{{location}}</p>
+
+</script>
+<script id="repotemplate" type="text/x-handlebars-template">
+<a href="{{url}}">{{name}}</a>
+
+<p class="repo-description">{{description}}</p>
+
+</script>
     <script src="js/bundle.js"></script>
+    </div>
   </body>
-  </div>
+</div>
 </html>
