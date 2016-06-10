@@ -1,3 +1,15 @@
+$bkgray: #f5f5f5;
+$black: #000;
+$border: #e4e4e4;
+$github-blue: #5376bf;
+$lightgray: #a9b0be;
+
+@mixin hover-blue {
+  &:hover {
+    color: $github-blue;
+    content: '';
+}
+}
 
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
@@ -14,4 +26,79 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 img {
   max-width: 100%;
+}
+//Top Row
+.top-row {
+  background-color: $bkgray;
+  border-bottom: .5px solid $border;
+  height: 50px;
+}
+
+.top-row>a {
+  @include hover-blue;
+
+  color: $black;
+  font-size: 27px;
+  margin-left: 90px;
+  margin-top: 10px;
+  padding-right: 7px;
+  text-decoration: none;
+}
+
+.github-search {
+  color: $lightgray;
+  display: inline-block;
+  height: 25px;
+  margin-top: 10px;
+  width: 360px;
+}
+//Top row navigation
+.top-nav {
+  display: inline-block;
+  padding: 0 auto; //Can't control space or 40px padding betweeen box and Pull requests UL
+
+  ul {
+    margin-left: 10px;
+  }
+
+  li {
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  a {
+    @include hover-blue;
+    color: $black;
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+//Top Right corner
+h5 {
+  @include hover-blue;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 250px;
+}
+
+.corner-nav {
+  display: inline-block;
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+
+  i {
+    @include hover-blue;
+    font-size: 15px;
+  }
+}
+
+.new-repo {
+  padding-right: 15px;
 }

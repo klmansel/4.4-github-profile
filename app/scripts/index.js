@@ -3,10 +3,10 @@ var handlebars = require('handlebars');
 
 var githubtoken = require('./githubapikey.js');
 
-if(githubtiken !== undefined){
+if(githubtoken !== undefined){
   $.ajaxSetup({
     headers: {
-      'Authorization': 'token' + githubtoken
+      'Authorization': 'token ' + githubtoken.token
     }
   });
 }
