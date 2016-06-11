@@ -3,6 +3,9 @@ $black: #000;
 $border: #e4e4e4;
 $github-blue: #5376bf;
 $lightgray: #a9b0be;
+$evilgrey: #666;
+$white: #fff;
+$newgreen: #8bc649;
 
 @mixin hover-blue {
   &:hover {
@@ -101,4 +104,73 @@ h5 {
 
 .new-repo {
   padding-right: 15px;
+}
+//Profile
+.center-section {
+  margin-top: 22px;
+}
+
+.profile-pic {
+  border-radius: 2.5%;
+  height: 230px;
+  width: 230px;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.loginid {
+  color: $evilgrey;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 0;
+}
+
+.bio {
+  background-color: $newgreen;
+  color: $white;
+  display: inline-block;
+  font-size: 12px;
+  height: 16px;
+  margin-right: 10px;
+  width: 25px;
+}
+
+//Repos
+.tabs {
+  ul {
+    border-bottom: 1px solid $lightgray;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      background-color: $bkgray(darken, 70%);
+      content: ''; //does not work-will not change on hover
+    }
+  }
+}
+
+.repo-tab {
+  border: 1px solid $lightgray;
+  border-bottom: 0;
+}
+
+.edit-button {
+  background-color: $bkgray;
+  border: 1px solid $lightgray;
+  display: inline-block;
+  font-weight: bold;
 }

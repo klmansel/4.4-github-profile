@@ -27,13 +27,23 @@
     </div>
   </div>
   </div>
-  <div class="container">
+  <div class="container center-section">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="profile-left">  </div>
       </div>
 
       <div class="col-md-8 col-offset-1">
+        <div class="tabs">
+          <ul>
+          <li><span class="octicon octicon-person"></span> Overview</li>
+          <li class="repo-tab"><span class="octicon octicon-repo"></span> Repositories</li>
+          <li><span class="octicon octicon-rss"></span> Public activity</li>
+          <a href="https://github.com/settings/profile"><button class="edit-button btn btn-sm">
+          <span class="octicon octicon-pencil"></span>Edit Profile</button></a>
+          </ul>
+
+        </div>
         <div class="repos-section"></div>
     </div>
 </div>
@@ -44,9 +54,12 @@
 <a href="{{html_url}}"><img class="profile-pic" src ="{{avatar_url}}"/></a>
 <p class="name">{{name}}</p>
 <p class="loginid">{{login}}</p>
-<p class="email">{{email}}</p>
-<p class="blog">{{blog}}</p>
-<p class="location">{{location}}</p>
+<span class="bio">NEW  </span>Add a Bio
+<p class="location"><span class="octicon octicon-location"></span> {{location}}</p>
+<p class="email"><span class="octicon octicon-mail"></span> {{email}}</p>
+<a href={{blog}} class="blog"><span class="octicon octicon-link"></span> {{blog}}</a>
+<p class"date-joined"><span class="mega-octicon octicon-clock"></span> Joined April 11, 2016</p>
+
 
 </script>
 <script id="repotemplate" type="text/x-handlebars-template">
