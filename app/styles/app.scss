@@ -1,7 +1,8 @@
 $bkgray: #f5f5f5;
 $black: #000;
 $border: #e4e4e4;
-$github-blue: #5376bf;
+$darkgray: #888;
+$github-blue: #4078c0;
 $lightgray: #a9b0be;
 $evilgrey: #666;
 $white: #fff;
@@ -31,6 +32,10 @@ img {
   max-width: 100%;
 }
 //Top Row
+.mega-octicon {
+  font-size: 27px;
+}
+
 .top-row {
   background-color: $bkgray;
   border-bottom: .5px solid $border;
@@ -142,8 +147,8 @@ h5 {
 //Repos
 .tabs {
   ul {
-    border-bottom: 1px solid $lightgray;
     margin-left: 0;
+    padding-bottom: 0;
     padding-left: 0;
   }
 
@@ -154,7 +159,9 @@ h5 {
   }
 
   a {
+    float: right;
     text-decoration: none;
+
 
     &:hover {
       background-color: $bkgray(darken, 70%);
@@ -164,13 +171,61 @@ h5 {
 }
 
 .repo-tab {
-  border: 1px solid $lightgray;
   border-bottom: 0;
+  border-left: 1px solid $lightgray;
+  border-right: 1px solid $lightgray;
+  border-top: 1px solid $lightgray;
 }
 
 .edit-button {
   background-color: $bkgray;
   border: 1px solid $lightgray;
   display: inline-block;
+  font-weight: bold;
+}
+
+.nav-repos {
+  border-bottom: 1px solid $lightgray;
+  border-top: 1px solid $lightgray;
+
+  ul {
+    display: inline-block;
+  }
+
+  li {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.repos-search {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 15px;
+  padding-left: 0;
+  width: 260px;
+}
+
+.repo-search-button {
+  display: inline-block;
+
+}
+
+.current-filter {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.repo-link {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.language {
+  color: $darkgray;
+  float: right;
+  font: Helvetica, sans-serif;
+  font-size: 12px;
   font-weight: bold;
 }
