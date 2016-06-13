@@ -31,9 +31,16 @@
     <div class="row">
       <div class="col-md-3">
         <div class="profile-left">  </div>
+        <div class="follow">
+          <p class="num-follow">    0 2 0</p>
+          <p class="label-follow">Following Starred Followers</p>
+
+          <p class="org">Organizations</p>
+          <img src="../app/images/jspic.png" alt="JS">
+        </div>
       </div>
 
-      <div class="col-md-8 col-offset-1">
+      <div class="col-md-9">
         <div class="tabs">
           <ul>
           <li><span class="octicon octicon-person"></span> Overview</li>
@@ -47,7 +54,7 @@
             <input type="search" class="repos-search form-control" placeholder="Find a repository...">
             <button class="repo-search-button btn btn-default">Search</button>
 
-            <nav>
+
               <ul>
               <li class="current-filter">All</li>
               <a href="#">  <li>Public</li></a>
@@ -56,8 +63,8 @@
               <a href="#">  <li>Forks</li></a>
               <a href="#">  <li>Mirrors</li></a>
               </ul>
-            </nav>
 
+              <button class="new-repo-button"><span class="octicon octicon-repo"></span>New</button>
         </div>
 
         <div class="repos-section"></div>
@@ -80,7 +87,7 @@
 </script>
 <script id="repotemplate" type="text/x-handlebars-template">
 <a class="repo-link" href="{{html_url}}">{{name}} </a><span class=language>{{language}}
-   <span class="octicon octicon-star">0</span>   <span class="octicon octicon-git-branch">0</span></span>
+      <span class="octicon octicon-star">0</span>   <span class="octicon octicon-git-branch">0</span></span>
 
 <p class="repo-description">{{description}}</p>
 

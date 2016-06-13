@@ -7,6 +7,7 @@ $lightgray: #a9b0be;
 $evilgrey: #666;
 $white: #fff;
 $newgreen: #8bc649;
+$linkblue: #337ab7;
 
 @mixin hover-blue {
   &:hover {
@@ -144,6 +145,41 @@ h5 {
   width: 25px;
 }
 
+.blog {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 220px;
+}
+
+.date-joined {
+  font-size: 14px;
+}
+
+.num-follow {
+  color: $linkblue;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.label-follow {
+  font-size: 10px;
+}
+
+.org {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.follow {
+  img {
+    height: 42px;
+    width: 42px;
+  }
+}
+
 //Repos
 .tabs {
   ul {
@@ -180,22 +216,44 @@ h5 {
 .edit-button {
   background-color: $bkgray;
   border: 1px solid $lightgray;
+  color: $black;
   display: inline-block;
   font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken($bkgray, 10%);
+    content: '';
+  }
 }
 
 .nav-repos {
   border-bottom: 1px solid $lightgray;
   border-top: 1px solid $lightgray;
+  padding-bottom: 10px;
 
   ul {
     display: inline-block;
+    padding-left: 20px;
   }
 
   li {
+    color: $linkblue;
     display: inline-block;
     text-decoration: none;
+
+    &:hover {
+      content: '';
+      text-decoration: underline;
+    }
   }
+}
+
+.new-repo-button {
+  background-color: $newgreen;
+  color: $white;
+  font-weight: bold;
+  width: 75px;
 }
 
 .repos-search {
@@ -208,12 +266,17 @@ h5 {
 
 .repo-search-button {
   display: inline-block;
+  font-weight: bold;
 
 }
 
 .current-filter {
   font-family: Arial, sans-serif;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .repo-link {
