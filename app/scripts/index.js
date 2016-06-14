@@ -2,15 +2,16 @@ var $ = require('jquery');
 var handlebars = require('handlebars');
 var moment = require('moment');
 
-var githubtoken = require('./githubapikey.js');
+// var githubtoken = require('./githubapikey.js');
+//
+// if(githubtoken !== undefined){
+//   $.ajaxSetup({
+//     headers: {
+//       'Authorization': 'token ' + githubtoken.token
+//     }
+//   });
+// }
 
-if(githubtoken !== undefined){
-  $.ajaxSetup({
-    headers: {
-      'Authorization': 'token ' + githubtoken.token
-    }
-  });
-}
 //Profile
 var baseUrl = 'https://api.github.com/users/klmansel';
 var profileTemplate = $('#profileTemplate').html();
