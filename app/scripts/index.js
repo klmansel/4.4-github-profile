@@ -1,5 +1,6 @@
 var $ = require('jquery');
 var handlebars = require('handlebars');
+var moment = require('moment');
 
 var githubtoken = require('./githubapikey.js');
 
