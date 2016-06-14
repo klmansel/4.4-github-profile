@@ -54,6 +54,7 @@
     "watch:fonts": "npm run fonts && onchange 'app/fonts/*' -- npm run fonts",
     "server": "live-server --open='dist'",
     "watch": "parallelshell 'npm run watch:html' 'npm run watch:scss' 'npm run watch:images' 'npm run watch:fonts' 'npm run watch:js' 'npm run server'"
+},
   "browserify": {
     "transform": [
       "browserify-shim",
